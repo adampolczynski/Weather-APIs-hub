@@ -8,4 +8,5 @@ axios.defaults.headers.common = {
   ['X-RapidAPI-Key']: process.env.RAPID_API_KEY || '',
 }
 
-import './src/server'
+import app from './src/server'
+export default app

@@ -4,11 +4,21 @@ Made to provide weather forecast for next 16 days from multiple API's with one c
 
 ## Configuration and running
 
-1. install dependencies with `yarn`
+1. install dependencies with `yarn` or `npm` - whatever
 2. copy `.env.dist` and rename so you have your own `.env`
 3. provide `RAPID_API_KEY` in `.env`
-4. run `yarn run dev`
+4. run app with `yarn run dev` or `npm run dev`
 5. access through browser - `localhost:8000/predictions/Warsaw,PL`
+
+## Testing
+
+- for testing purposes we use jest and supertest, with ts-jest to support typescript,
+
+- !!! remember to have your own `RapidApi` key and `LOCATION` provided in `__tests__/env.ts` file, `i know it is redundant to have two file properties with the same value :/`, but it's just my 'hello world' into testing, so keeping it up :) otherwise tests will fail,
+
+- main endpoint is checked for returned properties, there is only one param provided for GET call - `location` and by default it is `Cancun,Mexico` cause it is `very nice`,
+
+Run tests with `jest` command in project dir, remember to have `jest` available in your shell
 
 ## Flow description
 
@@ -36,7 +46,7 @@ type ResponseData =
 
 ## Technically to do at first
 
-Written in comments, marked with `@TODO`
+Creating abstraction for responses - interfaces, generic ones, types, others written in comments, marked with `@TODO`
 
 ## What we can with this
 
