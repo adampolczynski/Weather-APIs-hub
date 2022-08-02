@@ -12,9 +12,11 @@ Made to provide weather forecast for next 16 days from multiple API's with one c
 
 ## Testing
 
-- for testing purposes we use jest and supertest, with ts-jest to support typescript,
+- run tests with `jest` - in root project directory,
 
-- !!! remember to have your own `RapidApi` key and `LOCATION` provided in `__tests__/env.ts` file, `i know it is redundant to have two file properties with the same value :/`, but it's just my 'hello world' into testing, so keeping it up :) otherwise tests will fail,
+- for testing purposes we use `jest` and `supertest`, with `ts-jest` to support `typescript`,
+
+- !!! remember to have your own `RapidApi` key provided in `__tests__/env.ts` file, `i know it is redundant to have two file properties with the same value :/`, but it's just my 'hello world' into testing, so keeping it up :) otherwise tests will fail,
 
 - main endpoint is checked for returned properties, there is only one param provided for GET call - `location` and by default it is `Cancun,Mexico` cause it is `very nice`,
 
