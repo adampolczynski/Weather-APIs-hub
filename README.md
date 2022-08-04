@@ -4,6 +4,7 @@ Made to provide weather forecast for next 16 days from multiple API's with one c
 
 ## Configuration and running
 
+0. install `ts-node` globally
 1. install dependencies with `yarn` or `npm` - whatever
 2. copy `.env.dist` and rename so you have your own `.env`
 3. provide `RAPID_API_KEY` in `.env`

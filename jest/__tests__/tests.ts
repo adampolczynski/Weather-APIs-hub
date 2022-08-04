@@ -17,7 +17,6 @@ describe('Testing main app module', () => {
         .set('X-RapidAPI-Key', API_KEY)
         .expect(200)
         .expect((res) => {
-          console.log(res)
           console.log(Object.keys(res.body))
           console.log(res.body?.aeris?.length || '\n\n no response from aeris while testing? oh no, lets log it!\n\n')
         })
