@@ -9,7 +9,7 @@ if (!process.env.RAPID_API_KEY) {
 } else {
   app.use('/predictions', predictionsController)
   app.listen(port, () => {
-    console.log(`Running on port ${port}, go to /predictions/:Warsaw,PL to get some data`)
+    console.log(`Running on port ${port}, go to /predictions/Warsaw,PL to get some data`)
   })
 }
 
