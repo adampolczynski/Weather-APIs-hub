@@ -2,12 +2,18 @@
 
 Made to provide weather forecast for next 16 days from multiple API's with one call
 
+Providers integrated:
+
+- `https://rapidapi.com/visual-crossing-corporation-visual-crossing-corporation-default/api/visual-crossing-weather/`,
+- `https://rapidapi.com/weatherbit/api/weather`,
+- `https://rapidapi.com/aerisweather-aerisweather/api/aerisweather1`,
+
 ## Configuration and running
 
 0. install `ts-node` globally
 1. install dependencies with `yarn` or `npm` - whatever
 2. copy `.env.dist` and rename so you have your own `.env`
-3. provide `RAPID_API_KEY` in `.env`
+3. provide `RAPID_API_KEY` in `.env` (!!! you have to subscribe to each project for the key to work, links are provided above),
 4. run app with `yarn run dev` or `npm run dev`
 5. access through browser - `localhost:8000/predictions/Warsaw,PL`
 
